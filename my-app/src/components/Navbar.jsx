@@ -1,12 +1,17 @@
 import React from 'react'
 import logo from '../images/logo.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 import { Link } from 'react-scroll'
 
 
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div className="container">
                 <a href="/" className="navbar-brand">
                     <img src={logo} alt="Logo" width="150" />
@@ -51,7 +56,7 @@ export default function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="discover"
+                                to="summary"
                                 className="nav-link"
                                 smooth={true}
                                 duration={500}
@@ -62,7 +67,7 @@ export default function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="discover"
+                                to="takeaways"
                                 className="nav-link"
                                 smooth={true}
                                 duration={500}
@@ -73,7 +78,7 @@ export default function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="discover"
+                                to="subscribe"
                                 className="nav-link"
                                 smooth={true}
                                 duration={500}
@@ -83,19 +88,20 @@ export default function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    <span className="nav-item">
-                        <span className="fa-stack">
+                    <span className="nav-item me-2">
+                        <span className="fa-stack fa-lg">
                             <a href="#">
-                                <i className="fas fa-circle fa-stack-2x"></i>
-                                <i className="fab fa-facebook-f fa-stack-1x text-white"></i>
+                                
+                                <FontAwesomeIcon icon={faFacebookF} className="fa-stack-1x text-white" />
                             </a>
                         </span>
                     </span>
-                    <span className="nav-item">
-                        <span className="fa-stack">
+
+                    <span className="nav-item me-2">
+                        <span className="fa-stack fa-lg">
                             <a href="#">
-                                <i className="fas fa-circle fa-stack-2x"></i>
-                                <i className="fab fa-twitter fa-stack-1x text-white"></i>
+                               
+                                <FontAwesomeIcon icon={faTwitter} className="fa-stack-1x text-white" />
                             </a>
                         </span>
                     </span>

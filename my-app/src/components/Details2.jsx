@@ -3,7 +3,7 @@ import image from '../images/audience.jpg'
 
 const Details2 = () => {
     return (
-        <section class="details py-6 bg-light">
+        <section id='details' class="details py-6 bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
