@@ -1,4 +1,6 @@
-@import "bootstrap/scss/bootstrap";
+@import "../css/bootstrap.css";
+
+
 
 // @import 'bootstrap/dist/css/bootstrap.min.css';
 // @import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -8,26 +10,21 @@
     padding-top: 50px;
 }
 
+.summary {
+    background-color: #fbf9f5;
+    padding-top: 50px;
+}
 .details { 
     background-color: #fbf9f5;
     padding-top: 50px;
 }
 .mySwiper {
-    position: relative;
-  
     .swiper-button-prev,
     .swiper-button-next {
-      color: #f8b547; // смени цвета
+      color: #f8b547; 
       
     }
-  
-    .swiper-button-prev {
-      left: 20px; // по-близо до изображението
-    }
-  
-    .swiper-button-next {
-      right: 10px; // по-близо до изображението
-    }
+
   }
 
 .header {
